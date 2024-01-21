@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    --grey-para-text: rgb(44, 47, 44);
+    font-family: "montserrat";
+h2{
+    font-family: "poppins";
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+}
+
+/* -----------------------------------------
+header
+----------------------------------------- */
+
+header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+nav p {
+    font-family: "poppins";
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav ul li a {
+    font-family: "montserrat";
+    font-weight: 600;
+    color: var(--grey-para-text);
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+/* -----------------------------------------
+Hero Section
+----------------------------------------- */
+section.hero {
+    width: 100%;
+    height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+}
+
+/* hero Img */
+
+section.hero .hero-img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.hero .hero-img img {
+    height: 35rem;
+}
+
+/* hero text */
+
+section.hero .hero-txt {
+    flex: 1;
+}
+
+section.hero .hero-txt h1 {
+    font-family: "poppins";
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: -0.2rem;
+}
+
+section.hero .hero-txt p {
+    font-family: "montserrat";
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 0.2rem;
+    margin-bottom: 1.8rem;
+}
+
+section.hero .hero-txt .icons {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    align-items: center;
+}
+
+section.hero .hero-txt .icons img {
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+a#hero-filled-cta {
+    font-weight: 700;
+    padding: 0.7rem 1.4rem;
+    border-radius: 70rem;
+    border: 0.2rem solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: black;
+    margin-right: 1rem;
+    box-shadow: 2px 2px 3px black;
+}
+a#hero-filled-cta:hover{
+    box-shadow: none;
+    transition: all ease-in-out 0.3s;
+
+
+}
+
+a#hero-cta {
+    font-weight: 700;
+    padding: 0.7rem 1.4rem;
+    border-radius: 70rem;
+    border: 0.2rem solid rgb(44, 47, 44);
+    color: black;
+    box-shadow: 2px 2px 3px black;
+
+}
+a#hero-cta:hover{
+    border: 0.2rem solid rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+    
+    transition: all ease-in-out 0.3s;
+}
+
+
+/* -----------------------------------------
+About Me Section
+----------------------------------------- */
+section.about-me {
+    margin-top: 15rem;
+}
+
+
+
+section.about-me .abt-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* img  */
+
+section.about-me .img-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.about-me img {
+    height: 30rem;
+}
+
+/* Text  */
+section.about-me .abt-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1.25rem;
+
+}
+
+section.about-me .abt-txt h3{
+    font-family: "poppins";
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+section.about-me .abt-txt p {
+    font-family: "Roboto";
+    color: var(--grey-para-text);
+    line-height: 1.7rem;
+}
+
+a#abt-cta {
+    font-weight: 700;
+    padding: 0.7rem 1.4rem;
+    border-radius: 70rem;
+    border: 0.2rem solid rgb(44, 47, 44);
+    color: black;
+    box-shadow: 2px 2px 3px black;
+
+}
+a#abt-cta:hover{
+    border: 0.2rem solid rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+    box-shadow: none;
+    transition: all ease-in-out 0.3s;
+}
+/* -----------------------------------------
+Software Proficiency
+----------------------------------------- */
+section.softwares{
+    margin-top: 7rem;
+}
+
+section.softwares p{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+section.softwares .software-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+section.softwares img{
+    width: 77px;
+    height: 74px;
+}
+/* -----------------------------------------
+testimonials
+----------------------------------------- */
+section.testimonials{
+    margin: 7rem 0;
+}
+section.testimonials .container{
+    display: flex;
+    padding: 0 8rem;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+
+section.testimonials .container .client{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+section.testimonials .container .client img{
+height: 18rem;
+}
+section.testimonials .container .client .txt{
+    text-align: center; 
+}
+section.testimonials .container .client .txt h3{
+    font-family: "poppins";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--grey-para-text);
+    margin-bottom:.5rem ;
+}
+section.testimonials .container .client .txt p{
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+/* -----------------------------------------
+Questions and Answers
+----------------------------------------- */
+section.qns-ans{
+    max-width: 55%;
+    margin: auto;
+    
+}
+section.qns-ans .faq{
+    border: 1px solid rgb(195, 195, 195);
+}
+.qns-ans > p,
+.qns-ans > h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.qns-ans > h1 {
+  letter-spacing: 3px;
+}
+
+.accordion {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+
+}
+
+.accordion i {
+  font-size: 1.6rem;
+  
+}
+
+.active,
+.accordion:hover {
+  background-color: #efefef;
+}
+.pannel {
+  padding: 0 2rem 2.5rem 2rem;
+  background-color: white;
+  overflow: hidden;
+  background-color: #efefef;
+  display: none;
+
+}
+.pannel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.faq {
+  margin: 10px 0 0 0;
+}
+.faq.active {
+  border: none;
+}
+/* -----------------------------------------
+Footer
+----------------------------------------- */
+
+footer{
+    background-color: #1B4557;
+    height: 15rem;
+    margin-top: 7rem;
+}
+footer .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+footer hr{
+    width: 50%;
+    margin: auto;
+}
+
+footer   .icons img {
+    height: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+footer .icons .insta-footer{
+    height: 1.7rem;
+}
+footer p{
+    text-align: center;
+    color: white;
+    font-family: "montserrat";
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+
